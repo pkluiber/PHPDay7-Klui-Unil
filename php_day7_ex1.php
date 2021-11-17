@@ -8,13 +8,13 @@
 </head>
 <body>
     <?php
-        class vehicles
+        class Xehicles
         {
-            public $veh_name;
-            public $veh_model;
-            public $veh_makeYear;
-            public $veh_color;
-            public $veh_fuelType;
+            // public $veh_name;
+            // public $veh_model;
+            // public $veh_makeYear;
+            // public $veh_color;
+            // public $veh_fuelType;
 
             function __construct($veh_name, $veh_model, $veh_makeYear, $veh_color, $veh_fuelType) {
                 $this->name = $veh_name;
@@ -39,9 +39,9 @@
                 return $this->fuelType;
             }
         }
-        $audi = new vehicles("Audi", "Audi4 35TDI", 2021, "Blackgray", "Diesel");
-        $vw = new vehicles("VW", "Touran TSI", 2015, "Grey", "Diesel");
-        $maserati = new vehicles("
+        $audi = new Xehicles("Audi", "Audi4 35TDI", 2021, "Blackgray", "Diesel");
+        $vw = new Xehicles("VW", "Touran TSI", 2015, "Grey", "Diesel");
+        $maserati = new Xehicles("
         Autobild
         Maserati", "Ghibli Tipo M157", 2020, "Blue", "Diesel");
         echo $audi->get_name()."<br>";
